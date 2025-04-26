@@ -11,7 +11,7 @@ const REDIS_KEY = process.env.REDIS_KEY || 'FULLSTACK_TASK_Manikant';
 
 const app = express();
 app.use(cors({
-    origin: ['http://localhost:5173','https://kazamanikant.vercel.app/'],
+    origin: ['https://kazamanikant.vercel.app','http://localhost:5173'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
 app.use(express.json());
